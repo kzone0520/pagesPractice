@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴效果</title>
+    <style>
+        .contain {
+            margin-top: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            width: 200px;
+            height: 20px;
+            line-height: 20px;
+            display: block;
+            border: 1px solid #000;
+            border-bottom: none;
+        }
+        
+        .ele {
+            width: 200px;
+            height: 0;
+            border: 1px solid #000;
+            overflow: hidden;
+            border-top: none;
+            transition: height 0.3s;
+        }
+        
+         :target {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>定义和用法 URL 带有后面跟有锚名称 #，指向文档内某个具体的元素</p>
+        <p>这个被链接的元素就是目标元素(target element)</p>
+        <p>:target 选择器可用于选取当前活动的目标元素</p>
+    </div>
+    <div class="contain">
+        <a href="#panel1">标题1</a>
+        <div id="panel1" class="ele">
+            <p>这是内容1</p>
+        </div>
+    </div>
+    <div>
+        <a href="#panel2">标题2</a>
+        <div id="panel2" class="ele">
+            <p>这是内容2</p>
+        </div>
+    </div>
+    <div>
+        <a href="#panel3">标题3</a>
+        <div id="panel3" class="ele">
+            <p>这是内容3</p>
+        </div>
+    </div>
+    <div>
+        <a href="#panel4">标题4</a>
+        <div id="panel4" class="ele">
+            <p>这是内容4</p>
+        </div>
+    </div>
+</body>
+
+</html>
