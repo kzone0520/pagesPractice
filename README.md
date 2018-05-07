@@ -16,3 +16,8 @@
 2. ​
 
 3. ​
+
+## 其他的练习
+
+1. [简陋手风琴](https://shanyuhai123.github.io/pagesPractice/Others/accordion.html)
+
