@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东菜单栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            background-color: #f0f2ed;
+        }
+        
+        .wrap {
+            /* 外部div的配置 */
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 200px;
+        }
+        
+        .wrap ul {
+            padding: 10px 0;
+            background-color: #fefefe;
+            color: #636363;
+            overflow: hidden;
+            list-style: none;
+        }
+        
+        .wrap ul li {
+            display: block;
+            padding-left: 14px;
+            height: 27px;
+            line-height: 27px;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        .wrap ul li a {
+            text-decoration: none;
+            color: #626262;
+        }
+        
+        .wrap ul li:hover {
+            background-color: rgb(220, 218, 214);
+        }
+        
+        .wrap ul li a:hover {
+            color: rgb(252, 22, 23);
+        }
+        
+        .wrap ul li a.active {
+            color: rgb(252, 22, 23);
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        #sub {
+            position: absolute;
+            top: 0;
+            left: 200px;
+            width: 998px;
+            min-height: 478px;
+            background-color: #fff;
+            border: 1px solid #f7f7f7;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        #sub .sub_content {
+            padding: 20px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="None()">简单测试一下</button>
+    <div class="wrap">
+        <ul>
+            <!-- 一级菜单栏 -->
+            <li data-id="a"><a href="#a">家用电器</a></li>
+            <li data-id="b"><a href="#b">手机<span> / </span>运营商<span> / </span>数码</a></li>
+            <li data-id="c"><a href="#">电脑<span> / </span> 办公</a></li>
+            <li data-id="d"><a href="#">家居<span> / </span>家具<span> / </span>家装<span> / </span>厨具</a></li>
+            <li data-id="e"><a href="#">男装<span> / </span>女装<span> / </span>童装<span> / </span>内衣</a></li>
+            <li data-id="f"><a href="#">美妆个护<span> / </span>宠物</a></li>
+            <li data-id="g"><a href="#">女鞋<span> / </span>箱包<span> / </span>钟表<span> / </span>珠宝</a></li>
+            <li data-id="h"><a href="#">男鞋<span> / </span>运动<span> / </span>户外</a></li>
+            <li data-id="i"><a href="#">房产<span> / </span>汽车<span> / </span>汽车用品</a></li>
+            <li data-id="j"><a href="#">母婴<span> / </span>玩具乐器</a></li>
+            <li data-id="k"><a href="#">食品<span> / </span>酒类<span> / </span>生鲜<span> / </span>特产</a></li>
+            <li data-id="l"><a href="#">艺术<span> / </span>礼品鲜花<span> / </span>农资绿植</a></li>
+            <li data-id="m"><a href="#">医药保健<span> / </span>计生情趣</a></li>
+            <li data-id="n"><a href="#">图书<span> / </span>影像<span> / </span>电子书</a></li>
+            <li data-id="o"><a href="#">机票<span> / </span>酒店<span> / </span>旅游<span> / </span>生活</a></li>
+            <li data-id="p"><a href="#">理财<span> / </span>众筹<span> / </span>白条<span> / </span>保险</a></li>
+            <li data-id="q"><a href="#">安装<span> / </span>维修<span> / </span>清洗保养</a></li>
+        </ul>
+        <div id="sub">
+            <!-- <div id="a" class="sub_content">
+                我是家用电器的二级菜单
+            </div> -->
+            <div id="b" class="sub_content">
+                我是手机的二级菜单
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function None() {
+            document.getElementById('sub').classList.toggle('none')
+        }
+    </script>
+</body>
+
+</html>

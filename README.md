@@ -9,9 +9,11 @@
 
 ### 菜单栏
 
-1. 模拟京东菜单栏
+1. [模拟京东菜单栏](https://shanyuhai123.github.io/pagesPractice/MenuBar/jingdong.html)
 
    ![效果图](E:\pagesPractice\images\MenuBar\京东.png)
+
+   未完成,有一些知识需要了解后才能完成
 
 2. ​
 
