@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>居中</title>
+</head>
+
+<body>
+    <div>
+        <h1>原文来自<a href="https://css-tricks.com/centering-css-complete-guide/">这里</a></h1>
+        <details>
+            <summary>水平居中</summary>
+            <details>
+                <summary>行内元素</summary>
+                <h3>在父元素上设置 text-align: center</h3>
+                <p data-height="265" data-theme-id="0" data-slug-hash="aGRoOo" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="aGRoOo" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/aGRoOo/">aGRoOo</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </details>
+            <details>
+                <summary>块级元素</summary>
+                <h3>在子元素上设置 margin: 0 auto;</h3>
+                <p data-height="265" data-theme-id="0" data-slug-hash="zjmGGV" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Horizontally-block" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/zjmGGV/">Horizontally-block</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </details>
+            <details>
+                <summary>多个块级元素</summary>
+                <h3>只是分开使用以上的两种情况,顺带提了 flex </h3>
+                <p data-height="265" data-theme-id="0" data-slug-hash="QrZbdV" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="QrZbdV" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/QrZbdV/">QrZbdV</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </details>
+        </details>
+        <br>
+        <details>
+            <summary>垂直居中</summary>
+            <details>
+                <summary>行内元素</summary>
+                <details>
+                    <summary>单行</summary>
+                    <h3>
+                        1. padding-top == padding-bottom
+                        <br> 2. height == line-height
+                    </h3>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="vjVNER" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-inline-single" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/vjVNER/">Vertically-inline-single</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </details>
+                <br>
+                <details>
+                    <summary>多行</summary>
+                    <h3>利用表格</h3>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="zjmKOR" data-default-tab="css" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-inline-mul1" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/zjmKOR/">Vertically-inline-mul1</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <h3>利用flex</h3>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="KRGNQJ" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-inline-mul2" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/KRGNQJ/">Vertically-inline-mul2</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <h3>利用 'ghost element' </h3>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="PeyjVr" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-inline-mul3" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/PeyjVr/">Vertically-inline-mul3</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </details>
+            </details>
+            <details>
+                <summary>块级元素</summary>
+                <h3>居中元素高度已知</h3>
+                <p data-height="265" data-theme-id="0" data-slug-hash="WJaYBQ" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-block-known" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/WJaYBQ/">Vertically-block-known</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <h3>居中元素高度未知</h3>
+                <p data-height="265" data-theme-id="0" data-slug-hash="BxGapG" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-block-unknown" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/BxGapG/">Vertically-block-unknown</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <p>利用 flex</p>
+                <p data-height="265" data-theme-id="0" data-slug-hash="QrJWvX" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Vertically-block-flex" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/QrJWvX/">Vertically-block-flex</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </details>
+        </details>
+        <br>
+        <details>
+            <summary>水平及垂直居中</summary>
+            <h3>居中元素定宽定高</h3>
+            <p data-height="265" data-theme-id="0" data-slug-hash="BxGNNR" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title=" Horizontally-Vertically-Known" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/BxGNNR/"> Horizontally-Vertically-Known</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <h3>居中元素不定宽高</h3>
+            <p data-height="265" data-theme-id="0" data-slug-hash="NMEqvy" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Horizontally-Vertically-unKnown" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/NMEqvy/">Horizontally-Vertically-unKnown</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <h3>利用 flex</h3>
+            <p data-height="265" data-theme-id="0" data-slug-hash="ZomGvP" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Horizontally-Vertically-flex" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/ZomGvP/">Horizontally-Vertically-flex</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <h3>利用 grid</h3>
+            <p data-height="265" data-theme-id="0" data-slug-hash="YLRNwr" data-default-tab="css,result" data-user="hackyuan" data-embed-version="2" data-pen-title="Horizontally-Vertically-grid" class="codepen">See the Pen <a href="https://codepen.io/hackyuan/pen/YLRNwr/">Horizontally-Vertically-grid</a> by hackyuan (<a href="https://codepen.io/hackyuan">@hackyuan</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </details>
+    </div>
+</body>
+
+</html>
