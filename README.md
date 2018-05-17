@@ -19,6 +19,10 @@
 
 3. ​
 
+### 布局
+
+1. [居中布局](https://shanyuhai123.github.io/pagesPractice/Others/center.html)
+
 ## 其他的练习
 
 1. [简陋手风琴](https://shanyuhai123.github.io/pagesPractice/Others/accordion.html)
