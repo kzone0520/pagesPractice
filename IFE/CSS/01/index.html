@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* CSS 部分 */
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    section {
+      width: 300px;
+      height: 100px;
+      background: #eee;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 默认样式 */
+
+    .title {
+      font-size: 20px;
+      padding: 10px;
+      margin-bottom: 15px;
+      position: relative;
+      transition: color 1.5s linear;
+    }
+
+    .change {
+      font-size: 0.9rem;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* 改变样式 */
+
+    .text {
+      color: red;
+    }
+
+    .title:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 5px;
+      background-color: blue;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transition: width 1.5s linear, left 1.5s linear, color 2s linear;
+    }
+
+    /* 生效 */
+
+    .active {
+      color: blue;
+    }
+
+    .active:after {
+      width: 100%;
+      left: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HTML 部分 -->
+  <section class="main">
+    <p class="title" id="test">六一快乐</p>
+    <p class="change" onclick="change()">切换样式</p>
+  </section>
+
+  <script>
+    // javascript部分
+    var test = document.getElementById("test");
+    function change() {
+      test.classList.toggle("active");
+    } 
+  </script>
+</body>
+
+</html>

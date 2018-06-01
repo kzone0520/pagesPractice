@@ -7,6 +7,13 @@
 
  ## 分类
 
+### IFE-CSS
+1. [No.1 - 制作一个简单的菜单动画效果](http://ife.baidu.com/course/detail/id/18)
+
+   [实现效果](https://codepen.io/hackyuan/pen/ERjrXp)
+
+2. ​
+
 ### 菜单栏
 
 1. [模拟京东菜单栏](https://shanyuhai123.github.io/pagesPractice/MenuBar/jingdong.html)
@@ -14,10 +21,6 @@
    ![京东](images/MenuBar/京东.png)
 
    未完成,有一些知识需要了解后才能完成
-
-2. ​
-
-3. ​
 
 ### 布局
 
