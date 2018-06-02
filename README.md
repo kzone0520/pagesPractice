@@ -10,11 +10,17 @@
 ### IFE-CSS
 1. [No.1 - 制作一个简单的菜单动画效果](http://ife.baidu.com/course/detail/id/18)
 
-   [实现效果](https://codepen.io/hackyuan/pen/ERjrXp)
+   [实现效果(codepen)](https://codepen.io/hackyuan/pen/ERjrXp)
 
-   [上面打不开用这个](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/01/index.html)
+   [上面打不开用这个(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/01/index.html)
 
-2. ​
+2. [No.2 - 初步接触 CSS 2D 变形](http://ife.baidu.com/course/detail/id/29)
+
+   [实现效果(codepen)](https://codepen.io/hackyuan/pen/PaPdNe)
+
+   [打不开换这个(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/02/index.html)
+
+3. ​
 
 ### 菜单栏
 

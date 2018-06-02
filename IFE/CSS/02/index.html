@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>初步接触 CSS 2D 变形</title>
+  <style>
+    /* CSS 部分 */
+
+    section {
+      margin: 100px auto;
+      width: 600px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .box {
+      display: block;
+      height: 50px;
+      width: 50px;
+      background-color: #eee;
+      border: 1px solid;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* box2 向左倾斜30度 */
+
+    .box2 {
+      /* transform: skew(30deg); */
+      transform: skewX(30deg);
+    }
+
+    /* box3 x方向压缩两倍 */
+
+    .box3 {
+      transform: scaleX(0.5);
+    }
+
+    /* box4 旋转45度 */
+
+    .box4 {
+      transform: rotate(45deg);
+    }
+
+    /* box5 x轴位移10px, y轴位移20px */
+
+    .box5 {
+      transform: translate(10px, 20px);
+    }
+
+    /* box6 包含以上属性 */
+
+    .box6 {
+      transform: skew(30deg) scaleX(0.5) rotate(45deg) translate(10px, 20px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HTML 部分 -->
+  <section>
+    <div class="box">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+  </section>
+  <section>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+  </section>
+</body>
+
+</html>
