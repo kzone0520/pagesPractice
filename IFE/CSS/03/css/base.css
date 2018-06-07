@@ -1,0 +1,149 @@
+/* CSS 基礎部分 */
+body {
+  background-color: #d69a44;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* face */
+.face {
+  position: absolute;
+  top: 150px;
+  margin: 0 auto;
+  width: 350px;
+  height: 250px;
+  background-color: #fbf8f1;
+  border: 2px solid #3f200b;
+  border-radius: 50% 50% 30% 30%;
+  overflow: hidden;
+}
+/* hair */
+.hair {
+  width: 120px;
+  height: 120px;
+  background-color: #f3b32e;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  margin-top: -40px;
+  margin-left: 50px;
+}
+/* eye-wrap */
+.eye-wrap {
+  position: absolute;
+  width: 280px;
+  height: 70px;
+  top: 90px;
+  left: 50%;
+  margin-left: -140px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.eye {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.eye-circle {
+  width: 100px;
+  height: 80px;
+  border: 2px solid #482507;
+  border-radius: 50% 50% 40% 40%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.eyeball {
+  width: 46px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.eye-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 40% 40% 50% 50%;
+  margin-top: 48px;
+  border-top: 2px solid #46240b;
+  background-color: #f6f7f2;
+  transition: margin 1s linear;
+}
+.blush {
+  position: absolute;
+  height: 20px;
+  width: 70px;
+  background: red;
+  top: 45px;
+  left: 18px;
+  border-radius: 50% 50% 50% 50%;
+  background: #e85a5e;
+  opacity: 0;
+}
+/* nose */
+.nose {
+  width: 20px;
+  height: 10px;
+  border-bottom: 8px solid #000;
+  border-radius: 0% 0% 50% 50%;
+  top: 154px;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+}
+/* mouth-wrap */
+.mouth-wrap {
+  position: absolute;
+  top: 168px;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+  height: 20px;
+  overflow: hidden;
+}
+.mouth {
+  width: 40px;
+  height: 40px;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  border-radius: 0% 40% 50% 20%;
+  margin-top: -26px;
+  position: absolute;
+  left: 0;
+}
+.mouth-right {
+  border-bottom: 4px solid #000;
+  border-right: none;
+  border-left: 4px solid #000;
+  border-radius: 40% 0% 20% 50%;
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+/* ear-wrap */
+.ear-wrap{
+  position: absolute;
+  top: 130px;
+  width: 300px;
+  height: 100px;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.ear {
+  width: 80px;
+  height: 100px;
+  border: 2px solid #000;
+  background: #fbf8f1;
+  border-radius: 100% 10% 50% 0% ;
+  transition: transform 1s ease-in-out;
+}
+.ear-right {
+  border-radius: 10% 100% 0% 50%;
+  background: #f1ac2b;
+}

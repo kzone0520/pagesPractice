@@ -20,7 +20,11 @@
 
    [打不开换这个(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/02/index.html)
 
-3. ​
+3. [No.3 - CSS transition 和 CSS transform 配合制作动画](http://ife.baidu.com/course/detail/id/30)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/03/index.html)
+
+4. ​
 
 ### 菜单栏
 

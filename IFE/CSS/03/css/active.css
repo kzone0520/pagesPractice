@@ -1,0 +1,33 @@
+/* CSS 变化部分 */
+.ear,
+.eyeball,
+.eye-bottom,
+.blush,
+.mouth {
+  transition: all 1s ease-out;
+}
+
+/* ear */
+.container:hover .ear-left {
+  transform: rotate(-15deg);
+}
+.container:hover .ear-right {
+  transform: rotate(15deg);
+}
+
+/* eye */
+.container:hover .eyeball {
+  transform: scaleX(0.8);
+}
+.container:hover .eye-bottom {
+  transform: translateY(-10px);
+}
+.container:hover .blush {
+  opacity: 0.6;
+  transform: scaleX(0.8);
+}
+
+/* mouth */
+.container:hover .mouth {
+  border-radius: 50%;
+}
