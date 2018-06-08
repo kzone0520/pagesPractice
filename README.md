@@ -28,7 +28,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/04/index.html)
 
-5. ​
+5. [No.5 - 纯 CSS 制作绕中轴旋转的立方体](http://ife.baidu.com/course/detail/id/32)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/05/index.html)
+
+6. ​
 
 ### 菜单栏
 
