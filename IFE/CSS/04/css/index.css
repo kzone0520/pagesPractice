@@ -1,0 +1,27 @@
+/* style */
+section {
+  position: relative;
+  height: 350px;
+  width: 250px;
+  margin: 0 auto;
+}
+.front, .back {
+  position: absolute;
+  display: block;
+  backface-visibility: hidden;
+}
+.front {
+  z-index: 999;
+}
+
+/* active */
+.flip {
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.flip:hover {
+  transform: rotateY(180deg);
+}
