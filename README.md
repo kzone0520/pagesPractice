@@ -36,7 +36,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/06/index.html)
 
-7. ​
+7. [No.7 - 使用 animate.css 实现一个优雅的登录框](http://ife.baidu.com/course/detail/id/34)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/07/index.html)
+
+8. ​
 
 ### 菜单栏
 
