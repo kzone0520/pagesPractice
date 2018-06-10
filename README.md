@@ -32,7 +32,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/05/index.html)
 
-6. ​
+6. [No.6 - 利用 CSS animation 制作一个炫酷的 Slider](http://ife.baidu.com/course/detail/id/33)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/06/index.html)
+
+7. ​
 
 ### 菜单栏
 

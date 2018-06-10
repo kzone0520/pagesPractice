@@ -1,0 +1,148 @@
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+/* style */
+.slide {
+  position: relative;
+  width: 768px;
+  height: 468px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* img-wrap style */
+.img-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.img-wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: all 2s ease-in-out;
+}
+
+
+/* thumbnail image style */
+input[type=radio] {
+  display: none;
+}
+label[class^=thumbnail-img] {
+  display: block;
+  cursor: pointer;
+  width: 116px;
+  height: 71px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+label[class^=thumbnail-img]:hover {
+  filter: brightness(0.8);
+}
+.thumbnail-img1 {
+  background-image: url(../images/1.jpg);
+}
+.thumbnail-img2 {
+  background-image: url(../images/2.jpg)
+}
+.thumbnail-img3 {
+  background-image: url(../images/3.jpg)
+}
+.thumbnail-img4 {
+  background-image: url(../images/4.jpg)
+}
+.thumbnail-img5 {
+  background-image: url(../images/5.jpg)
+}
+
+/* :checked */
+input[id^=img]:not(:checked) ~ .img-wrap img{
+  animation: nochecked 1s linear;
+}
+#img1:checked ~ .img-wrap img:nth-child(1) {
+  opacity: 1;
+  animation: img1 1s ease-out;
+  z-index: 2;
+}
+#img2:checked ~ .img-wrap img:nth-child(2) {
+  opacity: 1;
+  animation: img2 1s ease-out;
+  z-index: 2;
+}
+#img3:checked ~ .img-wrap img:nth-child(3) {
+  opacity: 1;
+  animation: img3 1s ease-in;
+  z-index: 2;
+}
+#img4:checked ~ .img-wrap img:nth-child(4) {
+  opacity: 1;
+  animation: img4 1s ease-in;
+  z-index: 2;
+}
+#img5:checked ~ .img-wrap img:nth-child(5) {
+  opacity: 1;
+  animation: img5 1s ease-in-out;
+  z-index: 2;
+}
+/* animation */
+@keyframes nochecked {
+  0% {
+    z-index: 1;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes img1 {
+  0% {
+      left: -500px;
+  }
+  100% {
+      left: 0;
+  }
+}
+@keyframes img2 {
+  0% {
+      top: 350px;
+  }
+  100% {
+      top: 0;
+  }
+}
+@keyframes img3 {
+  0% {
+      transform: scale(0.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes img4 {
+  0% {
+      transform: scale(2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes img5 {
+  0% {
+      transform: scale(0.1) rotate(-360deg);
+  }
+  100% {
+      transform: scale(1) rotate(0);
+  }
+}
+
+
