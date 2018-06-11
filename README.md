@@ -40,7 +40,9 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/07/index.html)
 
-8. ​
+8. [No.8 - 把 AE 动画转换成 Web 原生动画](http://ife.baidu.com/course/detail/id/35)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/08/index.html)
 
 ### 菜单栏
 
