@@ -1,0 +1,30 @@
+span {
+  display: inline-block;
+}
+.strong {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.base-info>span:nth-child(2n+1) {
+  margin-right: 1.5rem;
+}
+.contact-info>span:nth-child(2n+1) {
+  margin-right: 1.5rem;
+}
+
+h1 {
+  height: 50px;
+  line-height: 50px;
+  background-color: grey;
+  color: #fff;
+}
+
+.info section {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.info h2 {
+  margin-right: 50px;
+}

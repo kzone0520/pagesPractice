@@ -44,6 +44,14 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/CSS/08/index.html)
 
+### IFE-BASE
+
+1. [NO.1 - 第五天和第六天：三种简历](http://ife.baidu.com/course/detail/id/40)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/01/index.html)
+
+2. ​
+
 ### 菜单栏
 
 1. [模拟京东菜单栏](https://shanyuhai123.github.io/pagesPractice/MenuBar/jingdong.html)

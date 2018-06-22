@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三种简历</title>
+  <style>
+    .main {
+      position: relative;
+    }
+    .slide {
+      position: absolute;
+      right: 20%;
+      top: 0;
+    }
+    </style>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+  <section class="main">
+    <h1>简历</h1>
+    <section class="info">
+      <section class="base-info">
+        <h2>基本信息</h2>
+        <span class="strong">姓名:</span><span>张三</span>
+        <span class="strong">性别:</span><span>男</span>
+        <span class="strong">应聘职位:</span><span>Web前端工程师</span>
+      </section>
+      <section class="contact-info">
+        <h2>联系方式</h2>
+        <span class="strong">手机:</span><span>12312341234</span>
+        <span class="strong">Email:</span><span>joinife@baidu.com</span>
+        <span class="strong">个人主页:</span><span>Github</span>
+      </section>
+      <section class="ability-des">
+        <h2>能力描述</h2>
+        <span class="strong">技术能力</span>
+        <br>
+        <span>熟练掌握HTML,CSS,JavaScript</span>
+        <br>
+        <span class="strong">综合能力</span>
+        <br>
+        <span>良好的沟通,主动积极,努力勤奋</span>
+      </section>
+      <section class="eduction">
+        <h2>教育经历</h2>
+        <span class="strong">本科</span>
+        <br>
+        <span>百度前端技术学院小薇学院</span>
+        <br>
+        <span class="strong">研究生</span>
+        <br>
+        <span>百度前端技术学院大斌学院</span>
+      </section>
+      <section class="project">
+        <h2>项目经历</h2>
+        <span class="strong">小度小度</span>
+        <br>
+        <span>作为前端工程师角色参与了ABC组件的开发</span>
+        <br>
+        <span class="strong">SAN Doc</span>
+        <br>
+        <span>作为文档工程师参与了SAN Doc编写</span>
+      </section>
+      <section class="slide">
+        <h2>样式修改</h2>
+        <select name="" id="styleSelect" onchange="dynamicLoadCss(value)">
+          <option value="./css/base.css">base</option>
+          <option value="./css/style-1.css">style1</option>
+          <option value="./css/style-2.css">style2</option>
+        </select>
+      </section>
+    </section>
+  </section>
+
+
+  <script>
+    function dynamicLoadCss(url) {
+      var head = document.getElementsByTagName('head')[0];
+      var link = document.createElement('link');
+      link.type = 'text/css';
+      link.rel = 'stylesheet';
+      link.href = url;
+      head.removeChild(head.childNodes[head.childNodes.length-1])
+      head.appendChild(link);
+    }
+  </script>
+</body>
+
+</html>
