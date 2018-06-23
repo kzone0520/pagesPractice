@@ -52,14 +52,6 @@
 
 2. ​
 
-### 菜单栏
-
-1. [模拟京东菜单栏](https://shanyuhai123.github.io/pagesPractice/MenuBar/jingdong.html)
-
-   ![京东](images/MenuBar/京东.png)
-
-   未完成,有一些知识需要了解后才能完成
-
 ### 布局
 
 1. [居中布局](https://shanyuhai123.github.io/pagesPractice/Others/center.html)
@@ -67,4 +59,5 @@
 ## 其他的练习
 
 1. [简陋手风琴](https://shanyuhai123.github.io/pagesPractice/Others/accordion.html)
+2. [选项卡消息](https://shanyuhai123.github.io/pagesPractice/Others/table_panel.html)
 
