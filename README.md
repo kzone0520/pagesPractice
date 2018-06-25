@@ -61,5 +61,5 @@
 1. [简陋手风琴](https://shanyuhai123.github.io/pagesPractice/Others/accordion.html)
 2. [选项卡消息](https://shanyuhai123.github.io/pagesPractice/Others/table_panel.html)
 3. [Hidden Panel](https://shanyuhai123.github.io/pagesPractice/Others/hidden_panel.html)
-4. [Holy Grail](https://shanyuhai123.github.io/pagesPractice/Others/Holy Grail.html)
+4. [Holy Grail](https://shanyuhai123.github.io/pagesPractice/Others/Holy_Grail.html)
 
