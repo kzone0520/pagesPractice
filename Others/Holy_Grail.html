@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>In Search of the Holy Grail</title>
+  <style>
+    body {
+      min-width: 550px; /* 2* LC width + RC width */
+    }
+
+    .quotation {
+      display: flex;
+      justify-content: center;
+    }
+
+    .quotation a {
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    /* clearfix */
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .clearfix {
+      *zoom: 1;
+    }
+
+    /* container style */
+    .container {
+      padding-left: 200px; /* LC width */
+      padding-right: 150px; /* RC width */
+      outline: 1px dotted darkred;
+
+      /* Equal-height columns */
+      overflow: hidden;
+    }
+    .container .column {
+      position: relative;
+      float: left;
+
+      /* Equal-height columns */
+      padding-bottom: 999999px;  
+      margin-bottom: -999999px;
+    }
+
+    .container .center {
+      width: 100%;
+      background-color: red;
+    }
+    .container .left {
+      width: 200px;
+      right: 200px;
+      margin-left: -100%;
+      background-color: aqua;
+    }
+    .container .right {
+      width: 150px;
+      margin-right: -150px;
+      background-color: orangered;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="quotation">
+      原文:
+      <a href="http://alistapart.com/article/holygrail">In Search of the Holy Grail</a>
+    </h1>
+  </header>
+  <article class="container clearfix">
+    <section class="column center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar
+        in augue. Vestibulum et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis
+        efficitur ut nec nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend
+        lorem, a auctor libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.</section>
+    <section class="column left">nihao</section>
+    <section class="column right">nihao</section>
+  </article>
+  <footer class="footer">
+    <h4>Footer</h4>
+  </footer>
+</body>
+
+</html>
