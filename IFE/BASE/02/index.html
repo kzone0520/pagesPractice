@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>学习布局</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>布局尝试</h1>
+  </header>
+  <article class="container">
+    <section class="demo demo1">
+      <Header>
+        <p>
+          <span>需求: </span>两栏布局,左侧占30%,右侧占70%</p>
+        <select id="select1">
+          <option value="select">选择</option>
+          <option value="float">float</option>
+          <option value="position">position</option>
+          <option value="flex">flex</option>
+        </select>
+      </Header>
+      <section class="wrapper wrapper1">
+        <div class="left">左侧占30%</div>
+        <div class="right">右侧占70%</div>
+      </section>
+    </section>
+    <section class="demo demo2">
+      <Header>
+        <p>
+          <span>需求: </span>两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化</p>
+        <select id="select2">
+          <option value="select">选择</option>
+          <option value="float">float</option>
+          <option value="position">position</option>
+          <option value="flex">flex</option>
+        </select>
+      </Header>
+      <section class="wrapper wrapper2">
+        <div class="left">左侧固定宽度</div>
+        <div class="right">右侧根据浏览器宽度自适应变化</div>
+      </section>
+    </section>
+    <section class="demo demo3">
+      <Header>
+        <p>
+          <span>需求: </span>两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</p>
+        <select id="select3">
+          <option value="select">选择</option>
+          <option value="float">float</option>
+          <option value="position">position</option>
+          <option value="flex">flex</option>
+        </select>
+      </Header>
+      <section class="wrapper wrapper3">
+        <div class="left">左侧根据浏览器宽度自适应变化</div>
+        <div class="right">右侧固定宽度</div>
+      </section>
+    </section>
+    <section class="demo demo4">
+      <Header>
+        <p>
+          <span>需求: </span>三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化</p>
+        <select id="select4">
+          <option value="select">选择</option>
+          <option value="float0">双飞翼布局</option>
+          <option value="float1">圣杯布局</option>
+          <option value="position">position</option>
+          <option value="flex">flex</option>
+        </select>
+      </Header>
+      <section class="wrapper wrapper4">
+        <div class="middle">
+          <div>中间部分宽度随浏览器宽度变化而自适应变化</div>
+        </div>
+        <div class="left">左侧固定宽度</div>
+        <div class="right">右侧固定宽度</div>
+      </section>
+    </section>
+    <section class="demo demo5">
+      <Header>
+        <p>
+          <span>需求: </span>三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化</p>
+        <select id="select5">
+          <option value="float">float</option>
+          <option value="position">position</option>
+          <option value="flex">flex</option>
+        </select>
+      </Header>
+      <section class="wrapper wrapper5">
+        对比第四项.该内容偏简单
+      </section>
+    </section>
+  </article>
+  <footer class="footer">
+    <h2>设计稿 <a href="https://shanyuhai123.github.io/pagesPractice/IFE/BASE/02/design.html">Design</a></h2>
+  </footer>
+
+  <script src="JS/index.js"></script>
+</body>
+
+</html>

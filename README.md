@@ -50,7 +50,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/01/index.html)
 
-2. ​
+2. [第七天到第八天：学习布局](http://ife.baidu.com/course/detail/id/42)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/02/index.html)
+
+3. ​
 
 ### 布局
 

@@ -1,0 +1,321 @@
+body {
+  min-width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.header, .footer {
+  width: 100%;
+  text-align: center;
+}
+/* clearfix */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* demo style */
+
+.container .demo {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #a60000;
+}
+
+.demo header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.demo header span {
+  color: #a60000;
+}
+
+/* wrapper style */
+
+.demo .wrapper {
+  height: 200px;
+  border: 1px dotted black;
+}
+
+/* .wrapper1 style */
+
+.wrapper1-float .left, .wrapper1-float .right, 
+.wrapper1-position .left, .wrapper1-position .right, 
+.wrapper1-flex .left, .wrapper1-flex .right {
+  height: 100%;
+}
+
+.wrapper1 .left {
+  width: 30%;
+}
+
+.wrapper1 .right {
+  width: 70%;
+}
+
+/* wrapper1-float */
+
+.wrapper1-float .left {
+  float: left;
+  background-color: #ff4040;
+}
+
+.wrapper1-float .right {
+  float: right;
+  background-color: #39e639;
+}
+
+/* wrapper1-position */
+
+.wrapper1-position {
+  position: relative;
+}
+
+.wrapper1-position .left {
+  position: absolute;
+  left: 0;
+  background-color: #a60000;
+}
+
+.wrapper1-position .right {
+  position: absolute;
+  right: 0;
+  background-color: #008500;
+}
+
+/* wrapper1-flex */
+
+.wrapper1-flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.wrapper1-flex .left {
+  background-color: #ff7373;
+}
+
+.wrapper1-flex .right {
+  background-color: #67e667;
+}
+
+/* wrapper2 style */
+
+.wrapper2-float .left, .wrapper2-float .right, 
+.wrapper2-position .left, .wrapper2-position .right, 
+.wrapper2-flex .left, .wrapper2-flex .right {
+  height: 100%;
+}
+
+.wrapper2 .left {
+  width: 200px;
+}
+
+/* wrapper2-float */
+
+.wrapper2-float .left {
+  float: left;
+  background-color: #34cfbe;
+}
+
+.wrapper2-float .right {
+  float: left;
+  box-sizing: border-box;
+  width: calc(100% - 200px);
+  background-color: #ff9140;
+}
+
+/* wrapper2-position */
+
+.wrapper2-position {
+  position: relative;
+}
+
+.wrapper2-position .left {
+  position: absolute;
+  left: 0;
+  background-color: #00675c;
+}
+
+.wrapper2-position .right {
+  box-sizing: border-box;
+  position: absolute;
+  left: 200px;
+  width: calc(100% - 200px);
+  background-color: #a64600;
+}
+
+/* wrapper2-flex */
+.wrapper2-flex {
+  display: flex;
+}
+.wrapper2-flex .left {
+  background-color: #5DCFC3;
+}
+.wrapper2-flex .right {
+  flex: 1;
+  background-color: #FFAE73;
+}
+
+/* wrapper3 style */
+.wrapper3-float .left, .wrapper3-float .right, 
+.wrapper3-position .left, .wrapper3-position .right, 
+.wrapper3-flex .left, .wrapper3-flex .right {
+  height: 100%;
+}
+
+.wrapper3 .right {
+  width: 200px;
+}
+
+/* wrapper3-float */
+.wrapper3-float .right {
+  float: right;
+  background-color: #B9F73E;
+}
+.wrapper3-float .left {
+  float: left;
+  box-sizing: border-box;
+  width: calc(100% - 200px);
+  background-color: #E6399B;
+}
+
+/* wrapper3-position */
+.wrapper3-position {
+  position: relative;
+}
+.wrapper3-position .right {
+  position: absolute;
+  right: 0;
+  background-color: #679B00;
+}
+.wrapper3-position .left {
+  position: absolute;
+  right: 200px;
+  box-sizing: border-box;
+  width: calc(100% - 200px);
+  background-color: #85004B;
+}
+
+/* wrapper3-flex */
+.wrapper3-flex {
+  display: flex;
+}
+.wrapper3-flex .right {
+  background-color: #C9F76F;
+}
+.wrapper3-flex .left {
+  flex: 1;
+  background-color: #E667AF;
+}
+
+/* wrapper4 style */
+
+/* 双飞翼布局 */
+.wrapper4-float0 div {
+  float: left;
+  height: 100%;
+}
+.wrapper4-float0 .middle {
+  width: 100%;
+  background-color: #E65217;
+}
+.wrapper4-float0 .left {
+  width: 100px;
+  margin-left: -100%;
+  background-color: #175E94;
+}
+.wrapper4-float0 .right {
+  width: 50px;
+  margin-left: -50px;
+  background-color: #68CC14;
+}
+.wrapper4-float0 .middle div {
+  margin: 0 50px 0 100px;
+}
+
+/* 圣杯布局(Holy Grail) */
+.wrapper4-float1 {
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+.wrapper4-float1 div {
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.wrapper4-float1 .middle {
+  width: 100%;
+  background-color: #F68C62;
+}
+.wrapper4-float1 .left {
+  width: 100px;
+  margin-left: -100%;
+  right: 100px;
+  background-color: #5FA5DB;
+}
+.wrapper4-float1 .right {
+  width: 50px;
+  margin-right: -50px;
+  background-color: #9FEE5E;
+}
+
+/* wrapper4-position */
+.wrapper4-position {
+  position: relative;
+}
+.wrapper4-position div {
+  height: 100%;
+  top: 0;
+}
+.wrapper4-position .middle {
+  /* margin: 0 50px 0 100px; */
+  /* 或者 */
+  position: absolute;
+  left: 100px;
+  right: 50px;
+  background-color: #7B2604;
+}
+.wrapper4-position .left {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  background-color: #042F4F;
+}
+.wrapper4-position .right {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  background-color: #346E04;
+}
+
+/* wrapper4-flex */
+.wrapper4-flex {
+  display: flex;
+}
+.wrapper4-flex .middle {
+  flex: 1;
+  background-color: #F6B69C;
+}
+.wrapper4-flex .left {
+  order: -1;
+  flex-basis: 100px;
+  background-color: #90BADB;
+}
+.wrapper4-flex .right {
+  flex-basis: 50px;
+  background-color: #BEEE97;
+}
+
+/* wrapper5 style */
+.wrapper5 {
+  text-align: center;
+  line-height: 200px;
+}
