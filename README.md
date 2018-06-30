@@ -56,7 +56,7 @@
 
 3. [第九天到第十一天：来做一个漂亮的网站](http://ife.baidu.com/course/detail/id/43)
 
-   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/03/index.html)
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/03)
 
 4. ​
 
