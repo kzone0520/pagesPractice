@@ -58,7 +58,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/03)
 
-4. ​
+4. [第十二天到第十五天，复杂页面实现](http://ife.baidu.com/course/detail/id/44)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/04)
+
+5. ​
 
 ### 布局
 
