@@ -62,7 +62,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/04)
 
-5. ​
+5. [第十七天到第十八天，“如果”可以“重来”](http://ife.baidu.com/course/detail/id/46)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/05)
+
+6. ​
 
 ### 布局
 
