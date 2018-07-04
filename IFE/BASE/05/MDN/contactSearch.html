@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>搜索联系人和电话号码</title>
+  <style>
+    section {
+      width: 600px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <label for="search">Search by contact name: </label>
+    <input id="search" type="text">
+    <button>Search</button>
+
+    <p></p>
+  </section>
+
+  <script>
+    // get dom
+    var para = document.querySelector('p');
+    var input = document.querySelector('input');
+    var btn = document.querySelector('button');
+
+    // init
+    var contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
+
+    // add Event
+    btn.addEventListener('click', contactSearch);
+
+    // function
+    function contactSearch() {
+      var searchName = input.value;
+
+      for (var i = 0; i < contacts.length; i++) {
+        var splitContact = contacts[i].split(':');
+        if (splitContact[0].toLowerCase() === searchName.toLowerCase()) {
+          para.textContent = splitContact[0] + '\'s number is ' + splitContact[1] + '.';
+          break;
+        } else {
+          para.textContent = 'Contact not found.';
+        }
+      }
+
+      input.value = '';
+      input.focus();
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>大写修正</title>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="upper">
+    <ul></ul>
+  </section>
+
+
+  <script>
+    // get dom
+    var list = document.querySelector('.upper ul');
+
+    // init ul
+    list.innerHTML = '';
+    var cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+    for (var i = 0; i < cities.length; i++) {
+      var lower =cities[i].toLowerCase();
+      var result = lower.slice(0, 1).toUpperCase() + lower.slice(1);
+
+      var listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一个简单的日历</title>
+  <style>
+    section {
+      width: 600px;
+      margin: 0 auto;
+    }
+    ul {
+      padding: 0;
+    }
+    ul li {
+      box-sizing: border-box;
+      display: block;
+      float: left;
+      width: 25%;
+      border: 2px solid white;
+      padding: 5px;
+      height: 40px;
+      background-color: #4A2DB6;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <label for="calendar">Select month: </label>
+    <select id="calendar">
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+    <h1></h1>
+    <ul></ul>
+  </section>
+
+
+  <script>
+    // get dom
+    var select = document.querySelector('select');
+    var h1 = document.querySelector('h1');
+    var list = document.querySelector('ul');
+
+    // add Event
+    select.addEventListener('change', chooseMonth);
+
+    // function
+    function chooseMonth() {
+      var choice = select.value;
+      var days = 31;
+
+      switch (choice) {
+        case 'February':
+          days = 28;
+          break;
+        case 'April':
+        case 'June':
+        case 'September':
+        case 'November':
+          days = 30;
+          break;
+        default:
+          days = 31;
+      }
+
+      createCalendar(days, choice);
+    }
+
+    function createCalendar(days, choice) {
+      // clear last write
+      list.innerHTML = '';
+
+      h1.textContent = choice;
+      for (var i = 0; i < days + 1; i++) {
+        var listItem = document.createElement('li');
+        listItem.textContent = i;
+        list.appendChild(listItem);
+      }
+    }
+  </script>
+</body>
+
+</html>

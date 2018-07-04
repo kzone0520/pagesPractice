@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>从原先部分得到新字符串</title>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <section class="stations">
+    <ul></ul>
+  </section>
+
+
+  <script>
+    // get dom
+    var list = document.querySelector('.stations ul');
+
+    // init ul 
+    list.innerHTML = '';
+    var stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                'GNF576746573fhdg4737dh4;Greenfield',
+                'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                'SYB4f65hf75f736463;Stalybridge',
+                'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+    
+    for (var i = 0; i < stations.length; i++) {
+      var code = stations[i].slice(0,3);
+      var location1 = stations[i].slice(stations.indexOf(';') + 1);
+      var result = code + ': ' + location1;
+
+      var listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+</html>

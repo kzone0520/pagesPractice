@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>过滤留言问候</title>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="greeting">
+    <ul></ul>
+  </section>
+
+
+  <script>
+    // get dom
+    var list = document.querySelector('.greeting ul');
+
+    // init ul
+    list.innerHTML = '';
+    var greetings = ['Happy Birthday!',
+      'Merry Christmas my love',
+      'A happy Christmas to all the family',
+      'You\'re all I want for Christmas',
+      'Get well soon'];
+    
+    for (var i = 0; i < greetings.length; i++) {
+      var sentences = greetings[i];
+
+      if (sentences.indexOf('Christmas') !== -1) {
+        var leftSentences = sentences;
+        var listItem = document.createElement('li');
+        listItem.textContent = sentences;
+        list.appendChild(listItem);
+      }
+    }
+
+  </script>
+</body>
+
+</html>

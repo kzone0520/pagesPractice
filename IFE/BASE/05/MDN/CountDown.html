@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>启动倒计时!</title>
+  <style>
+    section {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+  </section>
+
+  <script>
+    // get dom
+    var box = document.querySelector('section');
+    box.innerHTML = '';
+
+    // for
+    for (let i = 10; i >= 0; i--) {
+      var para = document.createElement('p');
+      if (i === 10) {
+        para.textContent = 'Countdown ' + i;
+      } else if (i === 0) {
+        para.textContent = 'Blast off!';
+      } else {
+        para.textContent = i;
+      }
+
+      box.appendChild(para);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>打印这些产品</title>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="price">
+    <ul></ul>
+    <p></p>
+  </section>
+
+  <script>
+    // get dom
+    var list = document.querySelector('.price ul');
+    var totalBox = document.querySelector('.price p');
+
+    // init ul, p
+    var total = 0;
+    list.innerHTML = '';
+    totalBox.textContent = '';
+
+    var products = ['Underpants:6.99',
+                'Socks:5.99',
+                'T-shirt:14.99',
+                'Trousers:31.99',
+                'Shoes:23.99'];
+
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i].split(':');
+      var productName = product[0];
+      var productPrice = product[1];
+      total += Number(product[1]);
+
+      var listItem = document.createElement('li');
+      listItem.textContent = products[i].replace(':', ' -- $');
+      list.appendChild(listItem);
+    }
+    totalBox.textContent = 'Total: $' + total.toFixed(2);
+  </script>
+</body>
+
+</html>

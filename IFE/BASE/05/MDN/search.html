@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>前5个搜索</title>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="search">
+    <input type="text">
+    <button>Search</button>
+    <ul></ul>
+  </section>
+
+  <script>
+    // get dom
+    var list = document.querySelector('.search ul');
+    var searchInput = document.querySelector('.search input');
+    var searchButton = document.querySelector('.search button');
+
+    // init el
+    list.innerHTML = '';
+    var myHistory = [];
+
+    searchButton.onclick = function () {
+      if (searchInput.value !== '') {
+        myHistory.unshift(searchInput.value);
+
+        list.innerHTML = '';
+
+        for (var i = 0; i < myHistory.length; i++) {
+          var itemText = myHistory[i];
+          var listItem = document.createElement('li');
+          listItem.textContent = itemText;
+          list.appendChild(listItem);
+        }
+
+        if (myHistory.length >= 5) {
+          myHistory.pop();
+        }
+
+        searchInput.value = '';
+        searchInput.focus();
+      }
+    }
+  </script>
+</body>
+
+</html>

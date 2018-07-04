@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>颜色表格</title>
+  <style>
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      box-sizing: border-box;
+      width: 400px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: aquamarine;
+    }
+
+    div {
+      display: block;
+      float: left;
+      width: 25%;
+      height: 25%;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+  <script>
+    // get dom
+    var divs = document.querySelectorAll('div');
+
+    // init
+    for (var i = 0; i < divs.length; i++) {
+      divs[i].addEventListener('click', changeBgColor);
+    }
+
+    // function
+    function changeBgColor(e) {
+      e.target.style.backgroundColor = randomColor();
+    }
+    function randomColor() {
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += random16(16).toString(16);
+      }
+      return color;
+    }
+
+    function random16(number) {
+      return Math.floor(Math.random() * (number + 1));
+    }
+  </script>
+</body>
+
+</html>

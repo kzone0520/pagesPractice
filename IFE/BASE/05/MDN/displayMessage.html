@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>展示信息</title>
+  <style>
+    .msgBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      background: #eee;
+    }
+
+    .msgBox p {
+      line-height: 1.5;
+      padding: 10px 20px;
+      color: #333;
+    }
+
+    .msgBox button {
+      background: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <button>Display message box</button>
+
+  <script>
+    var btn = document.querySelector('button');
+    btn.onclick = displayMessage;
+    function displayMessage() {
+      var html = document.querySelector('html');
+
+      var panel = document.createElement('div');
+      panel.setAttribute('class', 'msgBox');
+      html.appendChild(panel);
+
+      var msg = document.createElement('p');
+      msg.textContent = 'This is a message box';
+      panel.appendChild(msg);
+
+      var closeBtn = document.createElement('button');
+      closeBtn.textContent = 'x';
+      panel.appendChild(closeBtn);
+
+      closeBtn.onclick = function () {
+        panel.parentNode.removeChild(panel);
+      }
+    }
+  </script>
+</body>
+
+</html>
