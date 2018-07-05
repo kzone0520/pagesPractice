@@ -66,7 +66,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/05)
 
-6. ​
+6. [第十九天：找到那个DOM](http://ife.baidu.com/course/detail/id/47)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/06)
+
+7. ​
 
 ### 布局
 

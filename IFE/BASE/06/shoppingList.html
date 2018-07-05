@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一个动态的购物单</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 8px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My shopping list</h1>
+
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button>Add item</button>
+  </div>
+
+  <ul>
+
+  </ul>
+
+  <script>
+    // get dom
+    var inputFiled = document.querySelector('input');
+    var addBtn = document.querySelector('button');
+    var list = document.querySelector('ul');
+
+    // add Event
+    addBtn.addEventListener('click', addList);
+
+    // function
+    function addList() {
+      // init
+      var listContent = inputFiled.value;
+      inputFiled.value = '';
+
+      // create El
+      var listItem = document.createElement('li');
+      var listText = document.createElement('span');
+      var listBtn = document.createElement('button');
+
+      listText.textContent = listContent;
+      listBtn.textContent = 'Delete';
+      listItem.appendChild(listText);
+      listItem.appendChild(listBtn);
+      list.appendChild(listItem);
+
+      listBtn.onclick = function() {
+        listItem.parentNode.removeChild(listItem);
+      }
+
+      inputFiled.focus();
+    }
+  </script>
+</body>
+
+</html>
