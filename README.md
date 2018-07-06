@@ -70,7 +70,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/06)
 
-7. ​
+7. [第二十到第二十一天：让你和页面对话](http://ife.baidu.com/course/detail/id/49)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/07)
+
+8. ​
 
 ### 布局
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>让你和页面对话</title>
+  <style>
+    section {
+      margin-bottom: 40px;
+      border: 1px solid salmon;
+      padding: 20px;
+    }
+
+    select {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .palette {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .palette li {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+
+    .img {
+      background-image: url("erik_ce204002.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 -480px;
+      width: 480px;
+      height: 480px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section1">
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+    <p></p>
+  </section>
+
+  <!-- 样式修改两种比较好的选择 -->
+  <!-- 1. obj.className = 'style1'; -->
+  <!-- 2. obj.setAttribute('class', 'style1'); -->
+  <section class="section2">
+    <label>
+      <input type="radio" name="status" id="school"> School
+    </label>
+    <label>
+      <input type="radio" name="status" id="company"> Company
+    </label>
+    <br>
+    <select name="" id="school-select">
+      <option value="">北京邮电大学</option>
+      <option value="">黑龙江大学</option>
+      <option value="">华中科技大学</option>
+    </select>
+
+    <select name="" id="company-select">
+      <option value="">百度</option>
+      <option value="">爱奇艺</option>
+      <option value="">BILIBILI</option>
+    </select>
+  </section>
+
+  <section class="section3">
+    <ul class="palette">
+      <li style="background-color:crimson"></li>
+      <li style="background-color:bisque"></li>
+      <li style="background-color:blueviolet"></li>
+      <li style="background-color:coral"></li>
+      <li style="background-color:chartreuse"></li>
+      <li style="background-color:darkolivegreen"></li>
+      <li style="background-color:cyan"></li>
+      <li style="background-color:#194738"></li>
+    </ul>
+
+    <p class="color-picker"></p>
+  </section>
+
+  <section class="section4">
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn">淡出</button>
+  </section>
+
+  <section class="section5">
+    <div class="img"></div>
+    <button id="Move">动</button>
+    <button id="Stop">停</button>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
