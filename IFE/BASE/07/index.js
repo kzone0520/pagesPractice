@@ -118,6 +118,9 @@ section5.addEventListener('click', function(e) {
   var target = e.target || e.srcElement;
   switch (target.id) {
     case 'Move':
+      if (interval5) {
+        clearInterval(interval5);
+      }
       interval5 = setInterval(imgDown, 100);
       break;
     case 'Stop':
