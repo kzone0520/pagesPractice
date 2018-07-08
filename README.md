@@ -74,7 +74,11 @@
 
    [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/07)
 
-8. ​
+8. [第二十二天到第二十四天：JavaScript里面的居民们](http://ife.baidu.com/course/detail/id/50)
+
+   [实现效果(github-pages)](https://shanyuhai123.github.io/pagesPractice/IFE/BASE/08)
+
+9. ​
 
 ### 布局
 
